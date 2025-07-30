@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - AutoElite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Auto<span>Elite</span></h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html" class="active">Inventory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Inventory</h1>
+            <p>Explore our extensive collection of premium vehicles</p>
+        </div>
+    </section>
+
+    <section class="inventory-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="make">Make</label>
+                    <select id="make">
+                        <option value="">All Makes</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="lexus">Lexus</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="model">Model</label>
+                    <select id="model">
+                        <option value="">All Models</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="coupe">Coupe</option>
+                        <option value="convertible">Convertible</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year">Year</label>
+                    <select id="year">
+                        <option value="">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <select id="price">
+                        <option value="">Any Price</option>
+                        <option value="50000">Under $50,000</option>
+                        <option value="100000">Under $100,000</option>
+                        <option value="150000">Under $150,000</option>
+                        <option value="200000">Under $200,000</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="inventory-listing">
+        <div class="container">
+            <div class="car-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Luxury Sedan">
+                        <div class="car-tag">New Arrival</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Mercedes-Benz S-Class</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 3.0L V6</span>
+                            <span><i class="fas fa-road"></i> 12 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <div class="car-price">$89,500</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Luxury SUV">
+                        <div class="car-tag">Popular</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 BMW X7</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 4.4L V8</span>
+                            <span><i class="fas fa-road"></i> 8 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+                        </div>
+                        <div class="car-price">$92,800</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Sports Car">
+                        <div class="car-tag">Limited</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Porsche 911 Turbo</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 3.8L Flat-6</span>
+                            <span><i class="fas fa-road"></i> 15 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+                        </div>
+                        <div class="car-price">$174,300</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Electric Car">
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Tesla Model S Plaid</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-road"></i> 0 miles</span>
+                            <span><i class="fas fa-battery-full"></i> 396 mi range</span>
+                        </div>
+                        <div class="car-price">$129,990</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Luxury Coupe">
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Audi RS7</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 4.0L V8</span>
+                            <span><i class="fas fa-road"></i> 5 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+                        </div>
+                        <div class="car-price">$118,500</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Luxury SUV">
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Range Rover Autobiography</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 5.0L V8</span>
+                            <span><i class="fas fa-road"></i> 7 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+                        </div>
+                        <div class="car-price">$156,000</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Sports Car">
+                    </div>
+                    <div class="car-details">
+                        <h3>2022 Ferrari Roma</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 3.9L V8</span>
+                            <span><i class="fas fa-road"></i> 1,200 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+                        </div>
+                        <div class="car-price">$243,800</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Luxury Sedan">
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Lexus LS 500h</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 3.5L V6</span>
+                            <span><i class="fas fa-road"></i> 10 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <div class="car-price">$97,610</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Electric SUV">
+                    </div>
+                    <div class="car-details">
+                        <h3>2023 Rivian R1S</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-bolt"></i> Electric</span>
+                            <span><i class="fas fa-road"></i> 5 miles</span>
+                            <span><i class="fas fa-battery-full"></i> 316 mi range</span>
+                        </div>
+                        <div class="car-price">$84,500</div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't See What You're Looking For?</h2>
+                <p>Contact our team and we'll help you find your dream car.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Auto<span>Elite</span></h3>
+                    <p>Premium car dealership offering the finest selection of luxury and performance vehicles with exceptional customer service.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">New Car Sales</a></li>
+                        <li><a href="services.html">Pre-Owned Vehicles</a></li>
+                        <li><a href="services.html">Financing</a></li>
+                        <li><a href="services.html">Vehicle Service</a></li>
+                        <li><a href="services.html">Parts & Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Drive, Beverly Hills, CA 90210</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@autoelite.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AutoElite. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
